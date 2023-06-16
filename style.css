@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#box1{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.contianer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+transform-style: preserve-3d;
+position: relative;
+z-index: -1;
+height: 100%;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+   
+
+
+}
+.foreground{
+
+    
+    transform: translate(-10px) scale(1) ;
+    /* padding-top: 15em; */
+    top:25%;
+  
+  
+}
+
+.background,.foreground{
+    position: absolute;
+    height:100%;
+    width:100%;
+    /* object-fit: cover; */
+    z-index: -1;
+ 
+}
+
+h1{
+    position: absolute;
+ 
+    color:white;
+    font-size: 4rem;
+letter-spacing: 1px;
+top:4rem ;
+text-shadow: 1px 1px 5px red;
+    
+}
+section{
+    background-color: rgb(45,45,45);
+    color:white;
+    padding:5rem 0;
+}
+.bg1{
+    background-image:url(bike.jpg);
+}
+.bg2{
+    background-image:url(para-gliding.jpg);
+}
+
+.bg3{
+    background-image:url(swmming.jpg);
+}
+
+.set{
+  font-size:5rem;
+  padding:0 10rem;  
+} 
+.text{
+    font-size:1.5rem;
+    padding:0 10rem;
+    margin:5em 0;
+    text-shadow: 1px 1px 5px red;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+     height:500px;
+background-size:cover;
+background-position: center  ;
+
+}
+
+.desc{ 
+    display: flex;
+    position:absolute;
+    background-color: white;
+    padding:0.5rem 1.5rem;
+
+
+    /*  imp    */
+
+    top:50%;
+    left:50%;
+transform: translateX(-50%) translateY(-50%);
+    font-size:3.5rem;
+    font-weight: 600;
+    color:black;
+    text-shadow: 1px 1px 5px red;
+
+}
+
+
+/* background-size: cover
+
+object-fit: cover*/
+
+
+/* top,left,right,bottom property are use with non-static postioned element such as absolute,relative */
+@media screen  and (max-width:400px){
+    .text{
+        padding:0 3rem;  
+    }
+    .set{
+        /* margin-left:2px ;
+         */
+         
+         padding: 1rem;
+        font-size:3rem ;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
